@@ -13,3 +13,5 @@ val Pink40 = Color(0xFF7D5260)
 val BlueSky= Color(0xFF4478a9)
 val NightSky =  Color(0xFF333333)
 val BorderColor = Color(0x40000000)
+
+val Barcolor = Color(0xFFCECEE6)

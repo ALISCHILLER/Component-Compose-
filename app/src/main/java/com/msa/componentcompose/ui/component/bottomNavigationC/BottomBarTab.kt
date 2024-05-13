@@ -9,22 +9,22 @@ sealed class BottomBarTab(val title: String, val icon: ImageVector, val color: C
     data object Profile : BottomBarTab(
         title = "Profile",
         icon = Icons.Rounded.Person,
-        color = Color(0xFFFFA574)
+        color = Color(0xFFFF0000)
     )
     data object Home : BottomBarTab(
         title = "Home",
         icon = Icons.Rounded.Home,
-        color = Color(0xFFFA6FFF)
+        color = Color(0xFFFF0000)
     )
     data object Settings : BottomBarTab(
         title = "Settings",
         icon = Icons.Rounded.Settings,
-        color = Color(0xFFADFF64)
+        color = Color(0xFFFF0000)
     )
     data object Setti : BottomBarTab(
         title = "Settings",
         icon = Icons.Rounded.Settings,
-        color = Color(0xFFADFF64)
+        color = Color(0xFFFF0000)
     )
 }
 
@@ -32,5 +32,4 @@ val tabs = listOf(
     BottomBarTab.Profile,
     BottomBarTab.Home,
     BottomBarTab.Settings,
-    BottomBarTab.Setti,
 )

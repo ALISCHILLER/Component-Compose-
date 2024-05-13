@@ -57,6 +57,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
+import com.msa.componentcompose.ui.theme.Barcolor
 import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.haze
 import dev.chrisbanes.haze.hazeChild
@@ -65,45 +66,47 @@ import dev.chrisbanes.haze.hazeChild
 @Preview
 @Composable
 private fun GlassmorphicBottomNavigationPreview() {
+
     val hazeState = remember { HazeState() }
+
     Scaffold(
-        modifier = Modifier.background(Color.Black),
         bottomBar = { GlassmorphicBottomNavigation(hazeState) }
     ) { padding ->
-        LazyColumn(
-            Modifier
-                .haze(
-                    hazeState,
-                    backgroundColor = MaterialTheme.colorScheme.background,
-                    tint = Color.Black.copy(alpha = .2f),
-                    blurRadius = 30.dp,
-                )
-                .fillMaxSize(),
-            contentPadding = padding
-        ) {
-            items(50) {
-                Box(
-                    modifier = Modifier
-                        .padding(8.dp)
-                        .fillMaxWidth()
-                        .height(200.dp)
-                        .background(Color.DarkGray, RoundedCornerShape(12.dp))
-                        .border(
-                            width = Dp.Hairline,
-                            color = Color.White.copy(alpha = .5f),
-                            shape = RoundedCornerShape(12.dp)
-                        )
-                        .clip(RoundedCornerShape(12.dp))
-                ) {
-                    AsyncImage(
-                        model = "https://source.unsplash.com/random?neon,$it",
-                        contentDescription = null,
-                        modifier = Modifier.fillMaxSize(),
-                        contentScale = ContentScale.Crop,
-                    )
-                }
-            }
-        }
+        val p = padding
+//        LazyColumn(
+//            Modifier
+//                .haze(
+//                    hazeState,
+//                    backgroundColor = MaterialTheme.colorScheme.background,
+//                    tint = Color.Black.copy(alpha = .2f),
+//                    blurRadius = 30.dp,
+//                )
+//                .fillMaxSize(),
+//            contentPadding = padding
+//        ) {
+//            items(50) {
+//                Box(
+//                    modifier = Modifier
+//                        .padding(8.dp)
+//                        .fillMaxWidth()
+//                        .height(200.dp)
+//                        .background(Color.DarkGray, RoundedCornerShape(12.dp))
+//                        .border(
+//                            width = Dp.Hairline,
+//                            color = Color.White.copy(alpha = .5f),
+//                            shape = RoundedCornerShape(12.dp)
+//                        )
+//                        .clip(RoundedCornerShape(12.dp))
+//                ) {
+//                    AsyncImage(
+//                        model = "https://source.unsplash.com/random?neon,$it",
+//                        contentDescription = null,
+//                        modifier = Modifier.fillMaxSize(),
+//                        contentScale = ContentScale.Crop,
+//                    )
+//                }
+//            }
+//        }
     }
 }
 @Composable
@@ -119,11 +122,17 @@ fun GlassmorphicBottomNavigation(hazeState: HazeState) {
                 width = Dp.Hairline,
                 brush = Brush.verticalGradient(
                     colors = listOf(
-                        Color.White.copy(alpha = .8f),
-                        Color.White.copy(alpha = .2f),
+                        Color.Black.copy(alpha = .8f),
+                        Color.Black.copy(alpha = .2f),
                     ),
                 ),
                 shape = RoundedCornerShape(6.dp)
+            )
+            .haze(
+                hazeState,
+                backgroundColor = Color.Black,
+                tint = Barcolor.copy(alpha = .2f),
+                blurRadius = 3.dp,
             )
     ) {
         BottomBarTabs(
@@ -150,27 +159,27 @@ fun GlassmorphicBottomNavigation(hazeState: HazeState) {
             )
         )
 
-        Canvas(
-            modifier = Modifier
-                .fillMaxSize()
-                .clip(CircleShape)
-                .blur(50.dp, edgeTreatment = BlurredEdgeTreatment.Unbounded)
-        ) {
-            val tabWidth = size.width / tabs.size
-            drawCircle(
-                color = animatedColor.copy(alpha = .6f),
-                radius = size.height / 2,
-                center = Offset(
-                    (tabWidth * animatedSelectedTabIndex) + tabWidth / 2,
-                    size.height / 2
-                )
-            )
-        }
+//        Canvas(
+//            modifier = Modifier
+//                .fillMaxSize()
+//                .clip(CircleShape)
+//                .blur(50.dp, edgeTreatment = BlurredEdgeTreatment.Unbounded)
+//        ) {
+//            val tabWidth = size.width / tabs.size
+//            drawCircle(
+//                color = animatedColor.copy(alpha = .6f),
+//                radius = size.height / 2,
+//                center = Offset(
+//                    (tabWidth * animatedSelectedTabIndex) + tabWidth / 2,
+//                    size.height / 2
+//                )
+//            )
+//        }
 
         Canvas(
             modifier = Modifier
                 .fillMaxSize()
-                .clip(CircleShape)
+                .clip(RoundedCornerShape(6.dp))
         ) {
             val path = Path().apply {
                 addRoundRect(RoundRect(size.toRect(), CornerRadius(size.height)))
@@ -212,7 +221,7 @@ fun BottomBarTabs(
             fontSize = 12.sp,
             fontWeight = FontWeight.Medium,
         ),
-        LocalContentColor provides Color.White
+        LocalContentColor provides Color.Black
     ) {
         Row(
             modifier = Modifier.fillMaxSize(),

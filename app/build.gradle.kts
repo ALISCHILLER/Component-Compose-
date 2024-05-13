@@ -81,4 +81,6 @@ dependencies {
     implementation(libs.androidx.material.icons.extended.android)
 
     implementation(libs.haze)
+
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0-RC.2")
 }
