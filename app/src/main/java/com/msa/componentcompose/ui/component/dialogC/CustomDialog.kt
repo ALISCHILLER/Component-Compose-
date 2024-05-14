@@ -28,9 +28,11 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Warning
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.ReadOnlyComposable
@@ -46,14 +48,15 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.compose.ui.window.DialogWindowProvider
-
 
 
 @Composable
@@ -67,8 +70,10 @@ fun App() {
         showDialog = showDialog,
         onDismissRequest = { showDialog = false }
     ) {
-        ResetWarning(
-            onDismissRequest = { showDialog = false }
+        ErrorWarning(
+            onDismissRequest = { showDialog = false },
+            title = "خطا",
+            message = "خطا در درخواست شما"
         )
     }
 
@@ -85,6 +90,7 @@ fun App() {
     }
 
 }
+
 @Composable
 fun CustomDialog(
     showDialog: Boolean,
@@ -166,6 +172,104 @@ fun CustomDialog(
             }
         }
     }
+}
+
+
+@Composable
+fun ErrorWarning(
+    onDismissRequest: () -> Unit,
+    title: String,
+    message: String
+
+) {
+    CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
+        Column(Modifier.background(MaterialTheme.colorScheme.surface)) {
+
+            var graphicVisible by remember { mutableStateOf(false) }
+
+            LaunchedEffect(Unit) { graphicVisible = true }
+
+            AnimatedVisibility(
+                visible = graphicVisible,
+                enter = expandVertically(
+                    animationSpec = spring(stiffness = Spring.StiffnessMediumLow),
+                    expandFrom = Alignment.CenterVertically,
+                )
+            ) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(150.dp)
+                        .background(
+                            brush = Brush.linearGradient(
+                                colors = listOf(
+                                    Color(0xE9EE8888),
+                                    Color(0xFFE4BD79),
+                                )
+                            )
+                        ),
+                    contentAlignment = Alignment.Center,
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.Warning,
+                        contentDescription = null,
+                        tint = Color.White
+                    )
+                }
+            }
+
+            Column(
+                modifier = Modifier.padding(16.dp)
+            ) {
+                Box(modifier = Modifier.height(8.dp))
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.Bold,
+                )
+                Box(modifier = Modifier.height(8.dp))
+                Text(text = message)
+            }
+            Row(
+                modifier = Modifier.height(IntrinsicSize.Min)
+            ) {
+                Box(
+                    modifier = Modifier
+                        .padding(vertical = 10.dp)
+                        .width(2.dp)
+                        .fillMaxHeight()
+                        .background(
+                            MaterialTheme.colorScheme.onSurface.copy(alpha = .08f),
+                            shape = RoundedCornerShape(10.dp)
+                        )
+                )
+
+                Box(
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(RoundedCornerShape(8.dp))
+                        .clickable { onDismissRequest() }
+                        .weight(1f)
+                        .padding(vertical = 20.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(text = "تایید", fontWeight = FontWeight.Bold, color = Color(0xFFFF332C))
+                }
+            }
+        }
+    }
+}
+
+
+@Preview
+@Composable
+fun ErrorWarningPreview(
+) {
+    ErrorWarning(
+        {},
+        title = "خطا",
+        message = "خطا در درخواست شما"
+    )
 }
 
 @Composable
