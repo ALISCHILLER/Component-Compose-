@@ -1,4 +1,4 @@
-package com.msa.componentcompose.ui.component.button
+package com.msa.componentcompose.ui.component.bottomNavigationC
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.ExperimentalAnimationApi
@@ -24,7 +24,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -80,6 +79,7 @@ fun BottomNavNoAnimation(
                             interactionSource = interactionSource,
                             indication = null
                         ) {
+
                             selectedScreen = screens.indexOf(screen)
                         },
                         item = screen,
@@ -132,6 +132,7 @@ private fun BottomNavItem(
             FlipIcon(
                 modifier = Modifier
                     .align(Alignment.CenterVertically)
+                    .padding(5.dp)
                     .fillMaxHeight()
                     .alpha(animatedAlpha)  // <-------
                     .size(animatedIconSize),  // <-------
