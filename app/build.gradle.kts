@@ -84,4 +84,6 @@ dependencies {
     implementation(libs.haze)
 
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0-RC.2")
+
+    implementation ("com.airbnb.android:lottie-compose:6.4.0")
 }
