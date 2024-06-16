@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.compose.material)
     implementation(libs.androidx.paging.compose.android)
+    implementation(libs.play.services.base)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -86,4 +87,15 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0-RC.2")
 
     implementation ("com.airbnb.android:lottie-compose:6.4.0")
+
+    //Richeditor
+    implementation("com.mohamedrejeb.richeditor:richeditor-compose:1.0.0-rc05")
+
+
+    // System UI bars
+    implementation ("com.google.accompanist:accompanist-systemuicontroller:0.28.0")
+
+    // Permissions
+    implementation ("com.google.accompanist:accompanist-permissions:0.28.0")
+
 }
