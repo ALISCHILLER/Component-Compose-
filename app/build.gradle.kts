@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("plugin.parcelize")
 }
 
 android {
@@ -97,5 +98,6 @@ dependencies {
 
     // Permissions
     implementation ("com.google.accompanist:accompanist-permissions:0.28.0")
-
+    //map
+    implementation ("org.osmdroid:osmdroid-android:6.1.16")
 }

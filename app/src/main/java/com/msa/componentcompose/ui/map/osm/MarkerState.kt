@@ -1,4 +1,4 @@
-package com.hoomanholding.jpadistributor.view.component.osm
+package com.msa.componentcompose.ui.map.osm
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState

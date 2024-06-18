@@ -1,7 +1,7 @@
-package com.hoomanholding.jpadistributor.view.component.osm
+package com.msa.componentcompose.ui.map.osm
 
-import com.hoomanholding.jpadistributor.view.component.osm.OsmAndNode
-import com.hoomanholding.jpadistributor.view.component.osm.OsmMapView
+import com.msa.componentcompose.ui.map.osm.OsmAndNode
+import com.msa.componentcompose.ui.map.osm.OsmMapView
 import org.osmdroid.views.overlay.Polygon
 
 internal class PolygonNode(

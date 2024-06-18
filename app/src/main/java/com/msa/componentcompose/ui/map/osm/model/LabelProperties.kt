@@ -1,4 +1,4 @@
-package com.hoomanholding.jpadistributor.view.component.osm.model
+package com.msa.componentcompose.ui.map.osm.model
 
 
 //class LabelProperties for Marker with label

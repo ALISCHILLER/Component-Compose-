@@ -1,4 +1,4 @@
-package com.hoomanholding.jpadistributor.view.component.osm.extendedosm;
+package com.msa.componentcompose.ui.map.osm.extendedosm;
 
 
 import android.graphics.Canvas;
@@ -9,7 +9,7 @@ import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
 import android.graphics.Paint;
 
-import com.hoomanholding.jpadistributor.view.component.osm.model.LabelProperties;
+import com.msa.componentcompose.ui.map.osm.model.LabelProperties;
 
 public class MarkerWithLabel extends Marker {
     Paint textPaint = null;

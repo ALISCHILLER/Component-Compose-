@@ -1,4 +1,4 @@
-package com.hoomanholding.jpadistributor.view.component.osm
+package com.msa.componentcompose.ui.map.osm
 
 import android.content.Context
 import androidx.compose.foundation.layout.LayoutScopeMarker

@@ -1,7 +1,9 @@
-package com.hoomanholding.jpadistributor.view.component.osm
+package com.msa.componentcompose.ui.map.osm
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.currentComposer
+import com.msa.componentcompose.ui.map.osm.MapApplier
+import com.msa.componentcompose.ui.map.osm.OsmAndroidComposable
 import org.osmdroid.util.GeoPoint
 
 

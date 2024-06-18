@@ -1,4 +1,4 @@
-package com.hoomanholding.jpadistributor.view.component.osm
+package com.msa.componentcompose.ui.map.osm
 
 import android.graphics.Paint
 import androidx.compose.runtime.Composable
@@ -8,6 +8,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.LocalContext
+import com.msa.componentcompose.ui.map.osm.InfoWindowData
+import com.msa.componentcompose.ui.map.osm.MapApplier
+import com.msa.componentcompose.ui.map.osm.OsmAndroidComposable
+import com.msa.componentcompose.ui.map.osm.OsmInfoWindow
+import com.msa.componentcompose.ui.map.osm.PolylineNode
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.overlay.Polyline
 

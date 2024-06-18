@@ -1,4 +1,4 @@
-package com.hoomanholding.jpadistributor.view.component.osm;
+package com.msa.componentcompose.ui.map.osm;
 
 import android.graphics.Canvas;
 import android.graphics.Color;

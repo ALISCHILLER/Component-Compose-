@@ -1,4 +1,4 @@
-package com.hoomanholding.jpadistributor.view.component.osm
+package com.msa.componentcompose.ui.map.osm
 
 import android.graphics.drawable.Drawable
 import androidx.compose.runtime.Composable
@@ -6,8 +6,8 @@ import androidx.compose.runtime.ComposeNode
 import androidx.compose.runtime.currentComposer
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.LocalContext
-import com.hoomanholding.jpadistributor.view.component.osm.extendedosm.MarkerWithLabel
-import com.hoomanholding.jpadistributor.view.component.osm.model.LabelProperties
+import com.msa.componentcompose.ui.map.osm.extendedosm.MarkerWithLabel
+import com.msa.componentcompose.ui.map.osm.model.LabelProperties
 import org.osmdroid.views.overlay.Marker
 
 /**

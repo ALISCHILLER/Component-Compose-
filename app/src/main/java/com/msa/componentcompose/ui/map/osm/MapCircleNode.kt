@@ -1,4 +1,4 @@
-package com.hoomanholding.jpadistributor.view.component.osm
+package com.msa.componentcompose.ui.map.osm
 
 internal class MapCircleNode(
     private val mapView: OsmMapView,
