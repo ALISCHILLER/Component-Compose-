@@ -100,4 +100,7 @@ dependencies {
     implementation ("com.google.accompanist:accompanist-permissions:0.28.0")
     //map
     implementation ("org.osmdroid:osmdroid-android:6.1.16")
+
+
+    implementation ("com.google.accompanist:accompanist-pager:0.34.0")
 }

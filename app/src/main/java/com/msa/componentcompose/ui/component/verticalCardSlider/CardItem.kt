@@ -38,7 +38,7 @@ fun CardItem(card: CardItem, modifier: Modifier) {
             contentDescription = null,
             modifier = Modifier
                 .fillMaxWidth()
-                .height(200.dp)
+                .height(100.dp)
                 .clip(RoundedCornerShape(8.dp))
         )
         Column(

@@ -80,6 +80,8 @@ fun MyScreen() {
         CardItem("Card 1", "Description for Card 1", "http://5.160.125.98:8080/Content/Orginal2/Banner/Banner2.png"),
         CardItem("Card 2", "Description for Card 2", "http://5.160.125.98:8080/Content/Orginal2/CategoryIcon/spaghettired.png"),
         CardItem("Card 3", "Description for Card 3", "http://5.160.125.98:8080/Content/Orginal2/Banner/Banner1.png"),
+        CardItem("Card 4", "Description for Card 3", "http://5.160.125.98:8080/Content/Orginal2/Banner/Banner1.png"),
+        CardItem("Card 5", "Description for Card 3", "http://5.160.125.98:8080/Content/Orginal2/Banner/Banner1.png"),
         // Add more cards as needed
     )
     ComponentComposeTheme {
@@ -93,8 +95,8 @@ fun MyScreen() {
                 parentModifier = Modifier
                     .fillMaxWidth()
                     .height(540.dp),
-                contentWidth = 300.dp, // Adjust as needed
-                contentHeight = 400.dp, // Adjust as needed
+                contentWidth = 400.dp, // Adjust as needed
+                contentHeight = 200.dp, // Adjust as needed
             ) { modifier, index ->
                 CardItem(
                     card = cards[index],

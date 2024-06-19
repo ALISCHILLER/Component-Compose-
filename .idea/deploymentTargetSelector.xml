@@ -5,19 +5,19 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="BottomNavNoAnimation">
+      <SelectionState runConfigName="previews">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="AnPreview">
+      <SelectionState runConfigName="previewsSliderVertical">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="SlideInHorizontallyPreview">
+      <SelectionState runConfigName="GalleryTransition">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="LoadingAnimation">
+      <SelectionState runConfigName="GalleryTransitionVertical">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ExpandableCardPreview">
+      <SelectionState runConfigName="CustomSliderPreciew">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
