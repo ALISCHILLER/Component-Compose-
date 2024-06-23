@@ -59,7 +59,7 @@ fun AnimateExample(modifier: Modifier = Modifier) {
 }
 //        Crossfade(targetState = ) {
 //
-//        }
+//        }2
 
 @Composable
 fun AnimatedTransitionColor2(modifier: Modifier = Modifier) {
