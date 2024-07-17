@@ -46,6 +46,7 @@ fun ExpandableCard(
     titleFontSize: TextUnit = MaterialTheme.typography.h6.fontSize,
     titleFontWeight: FontWeight = FontWeight.Bold,
     padding: Dp = 12.dp,
+    painter: Painter = painterResource(id = R.drawable.sun),
     content: @Composable ColumnScope.() -> Unit,
 ){
     var expandedState by remember { mutableStateOf(false) }
