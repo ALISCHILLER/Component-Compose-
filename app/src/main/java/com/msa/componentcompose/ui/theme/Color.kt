@@ -19,7 +19,7 @@ val Barcolor = Color(0xFFCECEE6)
 
 val barcolorDark = Color(0xFF2E2E2E)
 val barcolorlow = Color(0xFF525252)
-val barcolorlight = Color(0xFFEEEEEE)
+val barcolorlight = Color(0xFFECECEC)
 val barcolorlight2 = Color(0xFFB8B8B8)
 val lightcoral = Color(0xfff3b8bb)
 
@@ -31,3 +31,5 @@ val RoyalRed = Color(0xFFEB091E)
 val background75 = Color(0xFFF8F8F8)
 
 val OrangeStatus = Color(0xFFFFAB00)
+val tagcar = Color(0xFF002F9C)
+val white = Color(0xFFFFFFFF)

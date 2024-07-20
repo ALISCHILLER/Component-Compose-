@@ -10,6 +10,7 @@ import com.msa.componentcompose.R
 
 // Set of Material typography styles to start with
 val iranianSansFont = Font(R.font.iransans_medium)
+val vazir_thin = Font(R.font.vazir_thin)
 
 //val GilroyFontFamily = FontFamily(
 //    Font(R.font.gilroy_black, FontWeight.Black),
@@ -54,9 +55,9 @@ val Typography = Typography(
         letterSpacing = 0.sp
     ),
     labelSmall = TextStyle(
-        fontFamily =  FontFamily(iranianSansFont),
+        fontFamily =  FontFamily(vazir_thin),
         fontWeight = FontWeight.Medium,
-        fontSize = 12.sp,
+        fontSize = 9.sp,
         lineHeight = 19.sp,
         letterSpacing = 0.5.sp,
     ),

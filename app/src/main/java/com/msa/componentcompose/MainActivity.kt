@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.msa.componentcompose.ui.Screen.profile.CarModelCard
 import com.msa.componentcompose.ui.component.animateC.App
 import com.msa.componentcompose.ui.component.verticalCardSlider.my.VerticalSlider
 import com.msa.componentcompose.ui.theme.ComponentComposeTheme
@@ -42,7 +43,7 @@ class MainActivity : ComponentActivity() {
 //                    )
 //                }
 //            }
-            App()
+            CarModelCard()
         }
     }
 }

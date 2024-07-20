@@ -1,11 +1,9 @@
 package com.msa.componentcompose.ui.component.editeText
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -19,7 +17,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -39,7 +36,7 @@ fun RoundedIconTextField(
     value: String,
     onValueChange: (String) -> Unit,
     label: String,
-    icon: ImageVector,
+    icon: ImageVector? = null,
     isPassword: Boolean = false,
     modifier: Modifier = Modifier,
     typeEnabled:Boolean=false,
@@ -63,10 +60,12 @@ fun RoundedIconTextField(
                     )
                 }
                 }else {
-                    Icon(
-                        imageVector = icon,
-                        contentDescription = null
-                    )
+                    icon?.let {
+                        Icon(
+                            imageVector = it,
+                            contentDescription = null
+                        )
+                    }
                 }
             },
             visualTransformation = if (passwordVisibility) VisualTransformation.None else PasswordVisualTransformation(),
