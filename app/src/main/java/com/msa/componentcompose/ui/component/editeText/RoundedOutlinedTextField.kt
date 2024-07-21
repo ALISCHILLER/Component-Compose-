@@ -23,6 +23,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -39,9 +41,10 @@ fun RoundedIconTextField(
     icon: ImageVector? = null,
     isPassword: Boolean = false,
     modifier: Modifier = Modifier,
-    typeEnabled:Boolean=false,
-    corner:RoundedCornerShape=RoundedCornerShape(26.dp),
-    keyboardType: KeyboardType = KeyboardType.Text
+    typeEnabled: Boolean = false,
+    corner: RoundedCornerShape = RoundedCornerShape(26.dp),
+    keyboardType: KeyboardType = KeyboardType.Text,
+    labelColor: Color = White
 ) {
     var passwordVisibility by remember { mutableStateOf(!isPassword) }
 
@@ -49,17 +52,22 @@ fun RoundedIconTextField(
         OutlinedTextField(
             value = value,
             onValueChange = onValueChange,
-            label = { Text(text = label) },
+            label = {
+                Text(
+                    text = label,
+                    color =labelColor
+                    )
+            },
             singleLine = true,
             trailingIcon = {
                 if (isPassword) {
-                IconButton(onClick = { passwordVisibility = !passwordVisibility }) {
-                    Icon(
-                        imageVector = if (passwordVisibility) Icons.Default.Visibility else Icons.Default.VisibilityOff,
-                        contentDescription = "Toggle password visibility"
-                    )
-                }
-                }else {
+                    IconButton(onClick = { passwordVisibility = !passwordVisibility }) {
+                        Icon(
+                            imageVector = if (passwordVisibility) Icons.Default.Visibility else Icons.Default.VisibilityOff,
+                            contentDescription = "Toggle password visibility"
+                        )
+                    }
+                } else {
                     icon?.let {
                         Icon(
                             imageVector = it,
@@ -71,12 +79,12 @@ fun RoundedIconTextField(
             visualTransformation = if (passwordVisibility) VisualTransformation.None else PasswordVisualTransformation(),
             keyboardOptions = KeyboardOptions.Default.copy(
                 imeAction = ImeAction.Done,
-                keyboardType =keyboardType
+                keyboardType = keyboardType
             ),
             keyboardActions = KeyboardActions(onDone = { /* Handle Done action */ }),
             modifier = Modifier.fillMaxWidth(),
             shape = corner,
-            readOnly  = typeEnabled
+            readOnly = typeEnabled
         )
     }
 }

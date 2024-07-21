@@ -23,7 +23,7 @@ fun InformationAccountScreen(modifier: Modifier = Modifier) {
             title = "مدل خودرو",
             painter = painterResource(id = R.drawable.ic_car)
         ) {
-
+            CarModelCard()
         }
         Spacer(modifier = modifier.height(3.dp))
         InformationAccountCard(

@@ -34,40 +34,41 @@ import com.msa.componentcompose.ui.component.expandable.ExpandableUnderLineCard
 
 @Composable
 fun ProfileScreen(modifier: Modifier = Modifier) {
-    Column(
-        modifier = modifier
-            .padding(10.dp)
-            .fillMaxSize(),
+    CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
+        Column(
+            modifier = modifier
+                .padding(10.dp)
+                .fillMaxSize(),
 
-    ){
-        Surface(
-            modifier = Modifier
-                .size(154.dp)
-                .padding(5.dp),
-            shape = CircleShape,
-            border = BorderStroke(0.5.dp, Color.LightGray),
-            tonalElevation = 4.dp,
-            color = MaterialTheme.colors.onSurface.copy(alpha = 0.5f)
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.logo),
-                contentDescription = "profile image",
-                modifier = modifier.size(135.dp),
-                contentScale = ContentScale.Crop
-            )
+            ) {
+            Surface(
+                modifier = Modifier
+                    .size(154.dp)
+                    .padding(5.dp),
+                shape = CircleShape,
+                border = BorderStroke(0.5.dp, Color.LightGray),
+                tonalElevation = 4.dp,
+                color = MaterialTheme.colors.onSurface.copy(alpha = 0.5f)
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.logo),
+                    contentDescription = "profile image",
+                    modifier = modifier.size(135.dp),
+                    contentScale = ContentScale.Crop
+                )
 
+            }
+            textShow(text = "کد پرسنلی: ۵۰۰۰۹۹۰")
+            textShow(text = "نانا قالبی ")
+            textShow(text = "کارشناس نرم افزار ")
+
+            ExpandableUnderLineCard(
+                title = "اطلاعات حساب کاربری",
+                painter = painterResource(id = R.drawable.ic_profile)
+            ) {
+                InformationAccountScreen()
+            }
         }
-        textShow(text = "کد پرسنلی: ۵۰۰۰۹۹۰")
-        textShow(text = "نانا قالبی ")
-        textShow(text = "کارشناس نرم افزار ")
-
-        ExpandableUnderLineCard(
-            title = "اطلاعات حساب کاربری",
-            painter = painterResource(id = R.drawable.ic_profile)
-        ) {
-            InformationAccountScreen()
-        }
-
 
     }
 }
@@ -78,7 +79,7 @@ fun textShow(modifier: Modifier = Modifier, text: String) {
     Text(
         modifier = modifier.padding(horizontal = 8.dp, vertical = 3.dp),
         text = text,
-        )
+    )
 }
 
 @Preview(showBackground = true)
