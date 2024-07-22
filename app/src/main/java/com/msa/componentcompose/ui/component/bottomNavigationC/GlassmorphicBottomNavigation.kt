@@ -64,6 +64,9 @@ import dev.chrisbanes.haze.hazeChild
 
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun GlassmorphicBottomNavigationPreview() {
 
@@ -109,6 +112,9 @@ private fun GlassmorphicBottomNavigationPreview() {
 //        }
     }
 }
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun GlassmorphicBottomNavigation(hazeState: HazeState) {
     var selectedTabIndex by remember { mutableIntStateOf(1) }
@@ -210,6 +216,9 @@ fun GlassmorphicBottomNavigation(hazeState: HazeState) {
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun BottomBarTabs(
     tabs: List<BottomBarTab>,

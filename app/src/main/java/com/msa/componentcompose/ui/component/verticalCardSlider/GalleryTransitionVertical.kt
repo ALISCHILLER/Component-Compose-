@@ -32,6 +32,9 @@ import androidx.wear.compose.material.Scaffold
 import coil.compose.AsyncImage
 import com.msa.componentcompose.R
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun GalleryTransitionVertical(modifier: Modifier = Modifier) {

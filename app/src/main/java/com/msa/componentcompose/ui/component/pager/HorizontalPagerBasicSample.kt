@@ -43,6 +43,9 @@ import kotlinx.coroutines.launch
 
 
 @OptIn(ExperimentalPagerApi::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun Sample() {
     Scaffold(
@@ -91,6 +94,9 @@ private fun Sample() {
 }
 
 @OptIn(ExperimentalPagerApi::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 internal fun ActionsRow(
     pagerState: PagerState,

@@ -18,6 +18,9 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun LoadingAnimation(
     modifier: Modifier = Modifier,

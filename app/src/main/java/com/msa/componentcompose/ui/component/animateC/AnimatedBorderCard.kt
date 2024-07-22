@@ -59,6 +59,9 @@ import com.msa.componentcompose.R
 import com.msa.componentcompose.ui.theme.Typography
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AnimatedBorderCard(
     modifier: Modifier = Modifier,
@@ -67,7 +70,10 @@ fun AnimatedBorderCard(
     gradient: Brush = Brush.sweepGradient(listOf(Color.Gray, Color.White)),
     animationDuration: Int = 10000,
     onCardClick: () -> Unit = {},
-    content: @Composable () -> Unit
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable () -> Unit
 ) {
     val infiniteTransition = rememberInfiniteTransition(label = "Infinite Color Animation")
     val degrees by infiniteTransition.animateFloat(
@@ -109,6 +115,9 @@ fun AnimatedBorderCard(
 }
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun AnimatedBorderCardPreview() {
     AnimatedBorderCard(
@@ -148,6 +157,9 @@ private fun AnimatedBorderCardPreview() {
 }
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AnimatedBorderCardRadar(
     modifier: Modifier = Modifier,
@@ -156,7 +168,10 @@ fun AnimatedBorderCardRadar(
     gradient: Brush = Brush.sweepGradient(listOf(Color.Gray, Color.White)),
     animationDuration: Int = 10000,
     onCardClick: () -> Unit = {},
-    content: @Composable () -> Unit
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable () -> Unit
 ) {
     val infiniteTransition = rememberInfiniteTransition(label = "Infinite Color Animation")
     val degrees by infiniteTransition.animateFloat(
@@ -199,6 +214,9 @@ fun AnimatedBorderCardRadar(
 
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun AnimatedBorderCardRadarPreciew() {
     AnimatedBorderCardRadar(

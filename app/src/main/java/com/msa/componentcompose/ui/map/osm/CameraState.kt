@@ -105,6 +105,9 @@ class CameraState(cameraProperty: CameraProperty) {
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun rememberCameraState(
     key: String? = null,

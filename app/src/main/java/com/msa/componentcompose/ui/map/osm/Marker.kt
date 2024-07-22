@@ -13,6 +13,9 @@ data class InfoWindowData(
     val snippet: String
 )
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @OsmAndroidComposable
 fun Marker(
@@ -23,7 +26,10 @@ fun Marker(
     snippet: String? = null,
     onClick: (Marker) -> Boolean = { false },
     id: String? = null,
-    infoWindowContent: @Composable (InfoWindowData) -> Unit = {}
+    infoWindowContent: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable (InfoWindowData) -> Unit = {}
 ) {
 
     val context = LocalContext.current

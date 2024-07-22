@@ -21,6 +21,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AnimateSlideOutHorizontally(modifier: Modifier = Modifier) {
 
@@ -49,6 +52,9 @@ fun AnimateSlideOutHorizontally(modifier: Modifier = Modifier) {
 }
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun AnPreview() {
     AnimateSlideOutHorizontally()

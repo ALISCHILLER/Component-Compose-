@@ -36,9 +36,13 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import com.msa.componentcompose.R
 import com.msa.componentcompose.ui.component.expandable.ExpandableUnderLineCard
+import com.msa.componentcompose.ui.component.switchC.CustomSwitch
 import com.msa.componentcompose.ui.theme.background75
 import com.msa.componentcompose.ui.theme.barcolorlight2
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun InformationAccountCard(
     modifier: Modifier = Modifier,
@@ -47,6 +51,10 @@ fun InformationAccountCard(
     titleFontWeight: FontWeight = FontWeight.Bold,
     padding: Dp = 12.dp,
     painter: Painter = painterResource(id = R.drawable.sun),
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable ColumnScope.() -> Unit,
 ) {
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
         Column(
@@ -60,6 +68,7 @@ fun InformationAccountCard(
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
+
                 Image(
                     modifier = Modifier
                         .padding(horizontal = 3.dp, vertical = 3.dp)
@@ -76,6 +85,7 @@ fun InformationAccountCard(
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
                 )
+                this@Column.content()
 
             }
             HorizontalDivider(color = barcolorlight2, thickness = 2.dp)
@@ -85,6 +95,9 @@ fun InformationAccountCard(
 
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun InformationAccountCardPreciew() {
     Column(
@@ -95,6 +108,20 @@ private fun InformationAccountCardPreciew() {
     ) {
         InformationAccountCard(
             title = "My Title",
-        )
+        ) {
+            CustomSwitch(
+                height = 40.dp,
+                width = 100.dp,
+                circleButtonPadding = 4.dp,
+                outerBackgroundOnResource = null,  // No resource provided
+                outerBackgroundOffResource = null, // No resource provided
+                circleBackgroundOnResource = R.drawable.switch_btn_moon,
+                circleBackgroundOffResource = R.drawable.switch_btn_sun,
+                stateOn = 1,
+                stateOff = 0,
+                initialValue = 1,
+                onCheckedChanged = {}
+            )
+        }
     }
 }

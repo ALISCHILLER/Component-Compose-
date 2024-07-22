@@ -32,6 +32,9 @@ import com.msa.componentcompose.R
 import com.msa.componentcompose.ui.component.expandable.ExpandableCard
 import com.msa.componentcompose.ui.component.expandable.ExpandableUnderLineCard
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun ProfileScreen(modifier: Modifier = Modifier) {
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
@@ -74,6 +77,9 @@ fun ProfileScreen(modifier: Modifier = Modifier) {
 }
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun textShow(modifier: Modifier = Modifier, text: String) {
     Text(
@@ -83,6 +89,9 @@ fun textShow(modifier: Modifier = Modifier, text: String) {
 }
 
 @Preview(showBackground = true)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun ProfileScreenPreview() {
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {

@@ -24,6 +24,9 @@ import androidx.compose.ui.zIndex
 import com.msa.componentcompose.ui.theme.ComponentComposeTheme
 import kotlin.math.abs
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun Carousel(
     count: Int,
@@ -32,7 +35,10 @@ fun Carousel(
         .height(540.dp),
     contentWidth: Dp,
     contentHeight: Dp,
-    content: @Composable (modifier: Modifier, index: Int) -> Unit
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable (modifier: Modifier, index: Int) -> Unit
 ) {
     val listState = rememberLazyListState(Int.MAX_VALUE / 2)
 
@@ -74,6 +80,9 @@ fun Carousel(
 }
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun MyScreen() {
     val cards = listOf(

@@ -39,6 +39,9 @@
 //import kotlinx.coroutines.launch
 //import java.util.*
 //
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 //@Composable
 //fun VoiceToTextComponent() {
 //    var text by remember { mutableStateOf("") }
@@ -113,6 +116,9 @@
 //}
 //
 //@Preview(showBackground = true)
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 //@Composable
 //fun PreviewVoiceToTextComponent() {
 //    VoiceToTextComponent()

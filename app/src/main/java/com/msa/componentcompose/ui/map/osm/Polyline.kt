@@ -20,6 +20,9 @@ enum class PolylineCap {
     BUTT, ROUND, SQUARE
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @OsmAndroidComposable
 fun Polyline(
@@ -33,7 +36,10 @@ fun Polyline(
     snippet: String? = null,
     id: String? = null,
     onPolylineLoaded: (Paint) -> Unit = {},
-    infoWindowContent: @Composable (InfoWindowData) -> Unit = {}
+    infoWindowContent: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable (InfoWindowData) -> Unit = {}
 ) {
 
     val context = LocalContext.current

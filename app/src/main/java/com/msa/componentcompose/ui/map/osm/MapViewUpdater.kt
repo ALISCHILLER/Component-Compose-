@@ -7,6 +7,9 @@ import androidx.compose.runtime.currentComposer
 import org.osmdroid.views.CustomZoomButtonsController
 import org.osmdroid.views.overlay.gestures.RotationGestureOverlay
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 internal fun MapViewUpdater(
     mapProperties: MapProperties,

@@ -50,6 +50,9 @@ import androidx.compose.ui.unit.dp
 import com.msa.componentcompose.R
 import kotlin.math.roundToInt
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun CustomDrawer(
     modifier: Modifier = Modifier,
@@ -116,6 +119,9 @@ fun CustomDrawer(
 
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun CustomDrawerPreview() {
     var drawerState by remember { mutableStateOf(CustomDrawerState.Closed) }
@@ -175,6 +181,9 @@ private fun CustomDrawerPreview() {
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun MainContent(
     modifier: Modifier = Modifier,

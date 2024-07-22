@@ -10,12 +10,21 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun MetaEntity(
     modifier: Modifier = Modifier,
     blur: Float = 30f,
-    metaContent: @Composable BoxScope.() -> Unit,
-    content: @Composable BoxScope.() -> Unit = {},
+    metaContent: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable BoxScope.() -> Unit,
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable BoxScope.() -> Unit = {},
 ) {
 
     Box(

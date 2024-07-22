@@ -32,12 +32,18 @@ import com.msa.componentcompose.ui.theme.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.yield
 import kotlin.math.absoluteValue
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AutoImsgtSlider(modifier: Modifier = Modifier) {
 
 }
 
 @ExperimentalPagerApi
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun SliderBanner(
     modifier: Modifier = Modifier
@@ -119,6 +125,9 @@ fun SliderBanner(
 
 @ExperimentalPagerApi
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun SliderBannerPreview() {
     SliderBanner()

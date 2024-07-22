@@ -40,6 +40,9 @@ import com.msa.componentcompose.ui.theme.ComponentComposeTheme
 
 
 @ExperimentalMaterialApi
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun ExpandableCard(
     title: String,
@@ -47,7 +50,10 @@ fun ExpandableCard(
     titleFontWeight: FontWeight = FontWeight.Bold,
     padding: Dp = 12.dp,
     painter: Painter = painterResource(id = R.drawable.sun),
-    content: @Composable ColumnScope.() -> Unit,
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable ColumnScope.() -> Unit,
 ){
     var expandedState by remember { mutableStateOf(false) }
     val rotationState by animateFloatAsState(
@@ -109,6 +115,9 @@ fun ExpandableCard(
 
 
 @ExperimentalMaterialApi
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun ExpandableCard(
     title: String,
@@ -192,6 +201,9 @@ fun ExpandableCard(
 
 
 @ExperimentalMaterialApi
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun ExpandableCardPreview() {

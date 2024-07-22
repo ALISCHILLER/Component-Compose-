@@ -34,6 +34,9 @@ import kotlin.math.absoluteValue
 data class SliderItem(val imageUrl: String)
 
 @Preview(showBackground = true)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun previews() {
     ComponentComposeTheme {
@@ -49,6 +52,9 @@ private fun previews() {
 
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun BuildLoginSlider() {
     val pagerState = rememberPagerState(initialPage = 1)

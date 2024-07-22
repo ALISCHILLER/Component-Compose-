@@ -46,6 +46,9 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.semantics.Role
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun DarkModeSwitch(checked: Boolean, modifier: Modifier, onCheckedChanged: (Boolean) -> Unit) {
 
@@ -133,6 +136,9 @@ fun DarkModeSwitch(checked: Boolean, modifier: Modifier, onCheckedChanged: (Bool
 }
 
 @Preview(showBackground = true)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun DarkModeSwitchPreview() {
     ComponentComposeTheme {

@@ -34,6 +34,9 @@ import com.msa.componentcompose.ui.Common.MetaContainer
 import com.msa.componentcompose.ui.Common.MetaEntity
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun ButtonPre(modifier: Modifier = Modifier) {
@@ -58,6 +61,9 @@ fun ButtonPre(modifier: Modifier = Modifier) {
 }
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 
 fun ProgressLoader() {
@@ -118,6 +124,9 @@ fun ProgressLoader() {
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun Circle(offset: Float) {
     val animation = rememberInfiniteTransition()

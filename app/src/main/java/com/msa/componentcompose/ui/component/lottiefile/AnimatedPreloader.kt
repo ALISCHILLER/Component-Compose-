@@ -23,6 +23,9 @@ import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.msa.componentcompose.R
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AnimatedPreloader(modifier: Modifier = Modifier) {
     val preloaderLottieComposition by rememberLottieComposition(
@@ -47,6 +50,9 @@ fun AnimatedPreloader(modifier: Modifier = Modifier) {
 
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun preciew() {
 

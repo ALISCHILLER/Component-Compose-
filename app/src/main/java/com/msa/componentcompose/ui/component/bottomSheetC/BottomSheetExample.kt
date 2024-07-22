@@ -19,11 +19,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun BottomSheetExample(
     modifier: Modifier = Modifier,
     onDismissRequest: () -> Unit,
-    content: @Composable ColumnScope.() -> Unit,
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable ColumnScope.() -> Unit,
 
     ) {
     val modalBottomSheetState = rememberModalBottomSheetState()
@@ -40,6 +46,9 @@ fun BottomSheetExample(
 }
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun BottomSheetExample(modifier: Modifier = Modifier) {
@@ -55,6 +64,9 @@ fun BottomSheetExample(modifier: Modifier = Modifier) {
     
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun CountryList() {
     val countries = listOf(

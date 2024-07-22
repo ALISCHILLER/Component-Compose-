@@ -7,6 +7,9 @@ import androidx.compose.ui.layout.ContentScale
 import coil.compose.AsyncImage
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun LoadAndCacheImage(
     modifier: Modifier,

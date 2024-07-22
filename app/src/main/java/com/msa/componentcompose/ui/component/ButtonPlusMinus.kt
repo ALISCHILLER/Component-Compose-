@@ -84,6 +84,9 @@ private const val DRAG_CLEAR_ICON_REVEAL_DP = 2
 private const val COUNTER_DELAY_INITIAL_MS = 100L
 private const val COUNTER_DELAY_FAST_MS = 100L
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun CounterButton(
     value: String,
@@ -126,6 +129,9 @@ fun CounterButton(
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun ButtonContainer(
     thumbOffsetX: Float,
@@ -228,6 +234,9 @@ private fun ButtonContainer(
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun IconControlButton(
     icon: ImageVector,
@@ -258,6 +267,9 @@ private fun IconControlButton(
 }
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun DraggableThumbButton(
     value: String,
@@ -426,6 +438,9 @@ private fun DraggableThumbButton(
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun Dp.dpToPx() = with(LocalDensity.current) { this@dpToPx.toPx() }
 
@@ -437,6 +452,9 @@ private enum class DragDirection {
 
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun ButtonPlusMinus() {
 

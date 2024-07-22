@@ -104,18 +104,27 @@
 //    }
 //}
 //
-//@Composable
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable
 //fun rememberCircularCarouselState(): CircularCarouselState = remember {
 //    CircularCarouselStateImpl()
 //}
 //
-//@Composable
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable
 //fun CircularCarousel(
 //    numItems: Int,
 //    modifier: Modifier = Modifier,
 //    itemFraction: Float = .25f,
 //    state: CircularCarouselState = rememberCircularCarouselState(),
-//    contentFactory: @Composable (Int) -> Unit,
+//    contentFactory: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable (Int) -> Unit,
 //) {
 //    require(numItems > 0) { "The number of items must be greater than 0" }
 //    require(itemFraction > 0f && itemFraction < .5f) { "Item fraction must be in the (0f, .5f) range" }
@@ -234,7 +243,10 @@
 //private fun Float.normalizeAngle(): Float = (this % 360f).let { angle -> if (this < 0f) 360f + angle else angle }
 //
 //@Preview(widthDp = 420, heightDp = 720)
-//@Composable
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable
 //private fun PreviewCarouse() {
 //    ComponentComposeTheme {
 //        val colors = listOf(

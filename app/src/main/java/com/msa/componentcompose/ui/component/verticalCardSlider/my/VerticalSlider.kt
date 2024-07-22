@@ -19,6 +19,9 @@ import com.msa.componentcompose.ui.theme.*
 import kotlin.math.absoluteValue
 
 @OptIn(ExperimentalFoundationApi::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun VerticalSlider(
     modifier: Modifier = Modifier
@@ -64,6 +67,9 @@ fun VerticalSlider(
 }
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun VerticalSliderPreview() {
     ComponentComposeTheme {

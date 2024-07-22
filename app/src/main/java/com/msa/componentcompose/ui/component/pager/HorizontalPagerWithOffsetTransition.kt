@@ -45,6 +45,9 @@ import kotlin.math.absoluteValue
 
 @Preview
 @OptIn(ExperimentalPagerApi::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun Sample() {
     Scaffold(
@@ -63,6 +66,9 @@ private fun Sample() {
 }
 
 @OptIn(ExperimentalPagerApi::class, ExperimentalCoilApi::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun HorizontalPagerWithOffsetTransition(modifier: Modifier = Modifier) {
     HorizontalPager(
@@ -131,6 +137,9 @@ fun HorizontalPagerWithOffsetTransition(modifier: Modifier = Modifier) {
 }
 
 @OptIn(ExperimentalCoilApi::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun ProfilePicture(modifier: Modifier = Modifier) {
     Card(

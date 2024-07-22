@@ -45,6 +45,9 @@ import androidx.compose.ui.unit.dp
 import androidx.wear.compose.material.Button
 import com.msa.componentcompose.ui.theme.ComponentComposeTheme
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AnimateExample(modifier: Modifier = Modifier) {
     ComponentComposeTheme {
@@ -61,6 +64,9 @@ fun AnimateExample(modifier: Modifier = Modifier) {
 //
 //        }2
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AnimatedTransitionColor2(modifier: Modifier = Modifier) {
     Column(
@@ -111,6 +117,9 @@ fun AnimatedTransitionColor2(modifier: Modifier = Modifier) {
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AnimatedTransitionColor(modifier: Modifier = Modifier) {
     ComponentComposeTheme {
@@ -155,6 +164,9 @@ fun AnimatedTransitionColor(modifier: Modifier = Modifier) {
 
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AnimatedBorderRadius(modifier: Modifier = Modifier) {
     ComponentComposeTheme {
@@ -228,6 +240,9 @@ fun AnimatedBorderRadius(modifier: Modifier = Modifier) {
 
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AnimatedVisibilityExample(modifier: Modifier = Modifier) {
     ComponentComposeTheme {
@@ -264,12 +279,18 @@ fun AnimatedVisibilityExample(modifier: Modifier = Modifier) {
 
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun AnimatedVisibilityExamplePreview() {
     ///AnimatedVisibilityExample()
 }
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun AnimateExamplePreview() {
     AnimateExample()

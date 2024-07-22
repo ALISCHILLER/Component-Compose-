@@ -24,6 +24,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun SquareToCircleAnimation() {
 
@@ -62,6 +65,9 @@ fun SquareToCircleAnimation() {
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview(showBackground = true)
 fun MyApp() {
@@ -77,6 +83,9 @@ fun MyApp() {
 }
 
 @ExperimentalMaterial3Api
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun App() {
     MyApp()

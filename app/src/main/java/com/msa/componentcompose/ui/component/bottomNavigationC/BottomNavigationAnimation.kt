@@ -50,6 +50,9 @@ import com.msa.componentcompose.ui.Common.MetaEntity
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlin.math.roundToInt
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun BottomNavigationAnimation() {

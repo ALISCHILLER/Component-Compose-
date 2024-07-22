@@ -59,6 +59,9 @@ import androidx.compose.ui.window.DialogProperties
 import androidx.compose.ui.window.DialogWindowProvider
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun App() {
@@ -91,11 +94,17 @@ fun App() {
 
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun CustomDialog(
     showDialog: Boolean,
     onDismissRequest: () -> Unit,
-    content: @Composable () -> Unit,
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable () -> Unit,
 ) {
 
     var showAnimatedDialog by remember { mutableStateOf(false) }
@@ -175,6 +184,9 @@ fun CustomDialog(
 }
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun ErrorWarning(
     onDismissRequest: () -> Unit,
@@ -262,6 +274,9 @@ fun ErrorWarning(
 
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun ErrorWarningPreview(
 ) {
@@ -272,6 +287,9 @@ fun ErrorWarningPreview(
     )
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun ResetWarning(
     onDismissRequest: () -> Unit,
@@ -365,5 +383,8 @@ fun ResetWarning(
 
 // Thanks @Sal7one for this improvement :+1
 @ReadOnlyComposable
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun getDialogWindow(): Window? = (LocalView.current.parent as? DialogWindowProvider)?.window

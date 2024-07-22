@@ -24,6 +24,9 @@ import coil.compose.rememberImagePainter
  * Simple pager item which displays an image
  */
 @OptIn(ExperimentalCoilApi::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 internal fun PagerSampleItem(
     page: Int,

@@ -24,6 +24,9 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun ExposedDrop(modifier: Modifier = Modifier) {
     val options = listOf("الف", "ب", "ث", "ت", "Gingerbread")
@@ -66,6 +69,9 @@ fun ExposedDrop(modifier: Modifier = Modifier) {
 }
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun ExposedDropPreview() {
     Column(

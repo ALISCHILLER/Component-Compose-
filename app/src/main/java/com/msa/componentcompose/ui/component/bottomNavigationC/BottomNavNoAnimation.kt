@@ -43,6 +43,9 @@ import androidx.compose.ui.unit.dp
 
 @Preview
 @ExperimentalAnimationApi
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun BottomNavNoAnimation(
 
@@ -94,6 +97,9 @@ fun BottomNavNoAnimation(
 
 
 @ExperimentalAnimationApi
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun BottomNavItem(
     modifier: Modifier = Modifier,
@@ -154,6 +160,9 @@ private fun BottomNavItem(
 }
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun FlipIcon(
     modifier: Modifier = Modifier,

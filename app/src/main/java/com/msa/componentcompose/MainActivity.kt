@@ -50,6 +50,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
@@ -59,6 +60,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 
 @Preview(showBackground = true)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun GreetingPreview() {
     ComponentComposeTheme {

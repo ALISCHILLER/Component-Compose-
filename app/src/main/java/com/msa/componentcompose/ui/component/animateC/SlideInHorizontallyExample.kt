@@ -19,6 +19,9 @@ import androidx.compose.ui.unit.dp
 import com.msa.componentcompose.R
 import com.msa.componentcompose.ui.theme.ComponentComposeTheme
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun SlideInHorizontallyExample() {
     var visible by remember { mutableStateOf(true) }
@@ -73,6 +76,9 @@ fun SlideInHorizontallyExample() {
 }
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun SlideInHorizontallyPreview() {
     ComponentComposeTheme {

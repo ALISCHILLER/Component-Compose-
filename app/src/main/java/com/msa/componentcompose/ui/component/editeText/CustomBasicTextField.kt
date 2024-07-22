@@ -1,8 +1,4 @@
-@file:OptIn(ExperimentalFoundationApi::class)
-
 package com.msa.componentcompose.ui.component.editeText
-
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -40,6 +36,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.msa.componentcompose.ui.theme.barcolorlight2
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun CustomBasicTextField(
     value: String,
@@ -47,7 +46,7 @@ fun CustomBasicTextField(
     modifier: Modifier = Modifier,
     borderColor: Color = Color.Black,
     backgroundColor: Color = Color.White,
-    maxLength: Int = 1000,
+    maxLength: Int = 0,
     textSize: Int = 12,
     textAlign: TextAlign = TextAlign.Center,
     fontStyle: FontStyle = FontStyle.Normal,
@@ -57,19 +56,22 @@ fun CustomBasicTextField(
     isError: Boolean = false,
     errorText: String = "",
     leadingIcon: ImageVector? = null,
+    leadingColor: Color = Color.Black,
     trailingIcon: ImageVector? = null,
     onLeadingIconClick: (() -> Unit)? = null,
     onTrailingIconClick: (() -> Unit)? = null,
+    enabled: Boolean = true,
+    readOnly: Boolean = false,
     keyboardType: KeyboardType = KeyboardType.Text // اضافه کردن پارامتر keyboardType
 ) {
-    val textStyle = TextStyle.Default.copy(fontSize = textSize.sp,textAlign=textAlign, color = textColor)
+    val textStyle =
+        TextStyle.Default.copy(fontSize = textSize.sp, textAlign = textAlign, color = textColor)
     Column(modifier = modifier) {
         Box(
             modifier = Modifier
                 .border(1.dp, if (isError) Color.Red else borderColor, shape = corner)
                 .background(backgroundColor, shape = corner)
                 .padding(3.dp)
-                .height(40.dp) // ارتفاع سفارشی برای مرکز عمودی
         ) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
@@ -83,7 +85,8 @@ fun CustomBasicTextField(
                         modifier = Modifier
                             .padding(end = 4.dp)
                             .size(24.dp)
-                            .clickable { onLeadingIconClick?.invoke() }
+                            .clickable { onLeadingIconClick?.invoke() },
+                        tint = leadingColor
                     )
                 }
 
@@ -96,12 +99,15 @@ fun CustomBasicTextField(
                     if (value.isEmpty() && placeholder.isNotEmpty()) {
                         Text(
                             text = placeholder,
-                            style = textStyle.copy(color = Color.Gray, textAlign = TextAlign.Center),
+                            style = textStyle.copy(
+                                color = Color.Gray,
+                                textAlign = TextAlign.Center
+                            ),
                             modifier = Modifier.align(Alignment.Center)
                         )
                     }
 
-                    BasicTextField2(
+                    BasicTextField(
                         value = value,
                         onValueChange = { newValue ->
                             if (newValue.length <= maxLength) {
@@ -115,7 +121,9 @@ fun CustomBasicTextField(
                             .align(Alignment.Center),
                         keyboardOptions = KeyboardOptions(
                             keyboardType = keyboardType
-                        ) // اضافه کردن keyboardType
+                        ),
+                        enabled = enabled,
+                        readOnly = readOnly
                     )
                 }
 
@@ -126,7 +134,7 @@ fun CustomBasicTextField(
                         modifier = Modifier
                             .padding(start = 4.dp)
                             .size(24.dp)
-                            .clickable { onTrailingIconClick?.invoke() }
+                            .clickable { onTrailingIconClick?.invoke() },
                     )
                 }
             }
@@ -144,12 +152,15 @@ fun CustomBasicTextField(
 }
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun MyScreen() {
     val textState = remember { mutableStateOf("") }
     Column(
         modifier = Modifier.fillMaxSize()
-    ){
+    ) {
         CustomBasicTextField(
             value = textState.value,
             onValueChange = { textState.value = it },
@@ -160,7 +171,8 @@ fun MyScreen() {
             isError = textState.value.isEmpty(),
             errorText = "This field cannot be empty",
             leadingIcon = Icons.Default.Search,
-            onLeadingIconClick = { /* Handle leading icon click */ }
+            onLeadingIconClick = { /* Handle leading icon click */ },
+            modifier = Modifier.height(50.dp)
         )
 
         CustomBasicTextField(
@@ -168,10 +180,11 @@ fun MyScreen() {
             onValueChange = { textState.value = it },
             borderColor = Color.Black,
             modifier = Modifier
+                .height(50.dp)
                 .weight(1f),
             backgroundColor = barcolorlight2,
             corner = RoundedCornerShape(12.dp),
-            textColor = Color.White
+            textColor = Color.White,
         )
     }
 

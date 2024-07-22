@@ -13,6 +13,9 @@ import com.msa.componentcompose.ui.component.instagram.circle.CircleInstagramCan
 import com.msa.componentcompose.ui.component.instagram.circle.startInstagramLoading
 
 //-------------------------------------------------------------------------------------------------- InstagramEffect
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun InstagramEffect(
     modifier: Modifier = Modifier,

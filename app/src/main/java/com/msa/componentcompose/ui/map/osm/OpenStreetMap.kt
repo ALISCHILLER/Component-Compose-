@@ -25,6 +25,9 @@ import org.osmdroid.views.MapView
 
 internal typealias OsmMapView = MapView
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun rememberMapViewWithLifecycle(vararg mapListener: MapListener): OsmMapView {
     val context = LocalContext.current
@@ -44,6 +47,9 @@ fun rememberMapViewWithLifecycle(vararg mapListener: MapListener): OsmMapView {
     return mapView
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun rememberMapLifecycleObserver(
     context: Context,
@@ -78,6 +84,9 @@ enum class ZoomButtonVisibility {
     ALWAYS, NEVER, SHOW_AND_FADEOUT
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun OpenStreetMap(
     modifier: Modifier = Modifier,
@@ -87,7 +96,10 @@ fun OpenStreetMap(
     onMapClick: (GeoPoint) -> Unit = {},
     onMapLongClick: (GeoPoint) -> Unit = {},
     onFirstLoadListener: () -> Unit = {},
-    content: (@Composable @OsmAndroidComposable OsmAndroidScope.() -> Unit)? = null
+    content: (// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable @OsmAndroidComposable OsmAndroidScope.() -> Unit)? = null
 ) {
 
     val mapView = rememberMapViewWithLifecycle()
@@ -142,7 +154,10 @@ internal suspend inline fun disposingComposition(factory: () -> Composition) {
 
 private fun OsmMapView.newComposition(
     parent: CompositionContext,
-    content: @Composable () -> Unit
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable () -> Unit
 ): Composition {
     return Composition(
         MapApplier(this), parent

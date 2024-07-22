@@ -28,6 +28,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 
 @ExperimentalMaterial3Api
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun SmallTopAppBarExample() {
@@ -50,6 +53,9 @@ fun SmallTopAppBarExample() {
 
 
 @OptIn(ExperimentalMaterial3Api::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun CenterAlignedTopAppBarExample() {
@@ -96,6 +102,9 @@ fun CenterAlignedTopAppBarExample() {
 }
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun MediumTopAppBarExample() {
@@ -140,6 +149,9 @@ fun MediumTopAppBarExample() {
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun LargeTopAppBarExample() {
@@ -186,6 +198,9 @@ fun LargeTopAppBarExample() {
 
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun BottomAppBarExample() {

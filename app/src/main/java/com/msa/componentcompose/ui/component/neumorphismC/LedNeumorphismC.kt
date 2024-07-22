@@ -48,13 +48,19 @@ package com.msa.componentcompose.ui.component.neumorphismC
 //import org.jetbrains.skia.Shader
 //import kotlin.math.min
 //
-//@Composable
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable
 //fun LedNeumorphismC(modifier: Modifier = Modifier) {
 //
 //}
 //
 //
-//@Composable
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable
 //fun LEDSeconds() {
 //
 //    var size by remember { mutableStateOf(IntSize.Zero) }
@@ -123,7 +129,10 @@ package com.msa.componentcompose.ui.component.neumorphismC
 //    }
 //}
 //
-//@Composable
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable
 //fun LEDDigit(
 //    modifier: Modifier = Modifier,
 //    digit: Int,
@@ -194,7 +203,10 @@ package com.msa.componentcompose.ui.component.neumorphismC
 //}
 //
 //
-//@Composable
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable
 //private fun LEDSegment(
 //    modifier: Modifier = Modifier,
 //    on: Boolean = false,

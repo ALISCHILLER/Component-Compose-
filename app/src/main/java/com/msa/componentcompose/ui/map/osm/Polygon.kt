@@ -12,6 +12,9 @@ import androidx.compose.ui.platform.LocalContext
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.overlay.Polygon
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @OsmAndroidComposable
 fun Polygon(
@@ -26,7 +29,10 @@ fun Polygon(
     snippet: String? = null,
     id: String? = null,
     onPolygonLoaded: (outlinePaint: Paint, fillPaint: Paint) -> Unit = {_, _ ->},
-    infoWindowContent: @Composable (InfoWindowData) -> Unit = {}
+    infoWindowContent: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable (InfoWindowData) -> Unit = {}
 ) {
 
     val context = LocalContext.current

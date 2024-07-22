@@ -30,6 +30,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun BorderAnimation(
     cardShape: RoundedCornerShape,
@@ -37,7 +40,10 @@ fun BorderAnimation(
     loading: Boolean,
     backgroundColor: Color,
     borderColors: List<Color>,
-    content: @Composable () -> Unit
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable () -> Unit
 ) {
     val infiniteTransition = rememberInfiniteTransition(label = "")
     val rotate by infiniteTransition.animateFloat(
@@ -99,6 +105,9 @@ fun BorderAnimation(
 
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun ButtonBorderAnmation(
     text: String,
@@ -147,6 +156,9 @@ fun ButtonBorderAnmation(
 
 
 @Preview
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun preciew() {
     Column(

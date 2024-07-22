@@ -13,6 +13,9 @@ import androidx.compose.ui.unit.dp
 import com.msa.componentcompose.ui.component.instagram.InstagramEffect
 
 //-------------------------------------------------------------------------------------------------- CircleInstagramAnimationButton
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun CircleInstagramAnimationButton(
     modifier: Modifier,
@@ -20,7 +23,10 @@ fun CircleInstagramAnimationButton(
     strokeWidth: Dp,
     strokeStartColor: Color,
     strokeEndColor: Color,
-    content: @Composable () -> Unit
+    content: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable () -> Unit
 ) {
     Surface(
         modifier = modifier,

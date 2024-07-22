@@ -15,6 +15,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun SwitchMinimalExample() {
@@ -29,6 +32,7 @@ fun SwitchMinimalExample() {
 }
 
 
+//------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun SwitchWithIconExample() {
@@ -54,6 +58,9 @@ fun SwitchWithIconExample() {
     )
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun SwitchWithCustomColors() {

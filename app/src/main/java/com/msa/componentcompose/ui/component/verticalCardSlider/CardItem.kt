@@ -20,6 +20,9 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
 
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun CardItem(card: CardItem, modifier: Modifier) {
 

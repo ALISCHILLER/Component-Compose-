@@ -39,6 +39,9 @@ import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.PagerState
 import kotlinx.coroutines.delay
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @Preview
 fun AutoPagerSliderDotsIndicator(modifier: Modifier = Modifier) {
@@ -67,6 +70,9 @@ fun AutoPagerSliderDotsIndicator(modifier: Modifier = Modifier) {
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 
 fun AutoSlidingCarousel(
@@ -74,7 +80,10 @@ fun AutoSlidingCarousel(
     autoSlideDuration: Long = 2000,
     pagerState: PagerState = remember { PagerState() },
     itemsCount: Int,
-    itemContent: @Composable (index: Int) -> Unit,
+    itemContent: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable (index: Int) -> Unit,
 ) {
     val isDragged by pagerState.interactionSource.collectIsDraggedAsState()
 
@@ -109,6 +118,9 @@ fun AutoSlidingCarousel(
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun IndicatorDot(
     modifier: Modifier = Modifier,
@@ -123,6 +135,9 @@ fun IndicatorDot(
     )
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun DotsIndicator(
     modifier: Modifier = Modifier,

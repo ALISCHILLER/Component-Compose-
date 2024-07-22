@@ -60,7 +60,10 @@ import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue
 
 //@OptIn(ExperimentalFoundationApi::class)
-//@Composable
+//// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable
 //fun CustomSlider(
 //    modifier: Modifier = Modifier,
 //    sliderList: MutableList<String>,
@@ -126,6 +129,9 @@ import kotlin.math.absoluteValue
 
 
 @OptIn(ExperimentalFoundationApi::class)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun CustomSlider(
     modifier: Modifier = Modifier,
@@ -225,6 +231,9 @@ fun CustomSlider(
 }
 @Preview
 @PreviewScreenSizes
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun CustomSliderPreciew() {
     Surface(

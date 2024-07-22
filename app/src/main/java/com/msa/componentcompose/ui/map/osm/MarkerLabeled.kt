@@ -23,9 +23,15 @@ import org.osmdroid.views.overlay.Marker
  * - id: String? = null
  * - label : String? = null
  * - labelProperties: LabelProperties = LabelProperties()
- * - infoWindowContent: @Composable (InfoWindowData) -> Unit = {}
+ * - infoWindowContent: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable (InfoWindowData) -> Unit = {}
  * */
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @OsmAndroidComposable
 fun MarkerLabeled(
@@ -38,7 +44,10 @@ fun MarkerLabeled(
     id: String? = null,
     label : String? = null,
     labelProperties: LabelProperties = LabelProperties(),
-    infoWindowContent: @Composable (InfoWindowData) -> Unit = {}
+    infoWindowContent: // Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
+@Composable (InfoWindowData) -> Unit = {}
 ) {
     val context = LocalContext.current
     val applier = currentComposer.applier as? MapApplier ?: throw IllegalStateException("Invalid Applier")

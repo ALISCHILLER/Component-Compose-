@@ -5,6 +5,9 @@ import androidx.compose.runtime.currentComposer
 
 
 //-------------------------------------------------------------------------------------------------- OsmClear
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 @OsmAndroidComposable
 fun OsmClear() {

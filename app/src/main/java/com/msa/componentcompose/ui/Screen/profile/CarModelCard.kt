@@ -15,11 +15,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import com.msa.componentcompose.R
+import com.msa.componentcompose.ui.component.button.CustomButton
 import com.msa.componentcompose.ui.component.editeText.CustomBasicTextField
 import com.msa.componentcompose.ui.component.editeText.OutTextFieldSample
 import com.msa.componentcompose.ui.component.editeText.RoundedIconTextField
@@ -31,6 +33,9 @@ import com.msa.componentcompose.ui.theme.barcolorlight2
 import com.msa.componentcompose.ui.theme.tagcar
 import com.msa.componentcompose.ui.theme.white
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun CarModelCard(modifier: Modifier = Modifier) {
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
@@ -38,25 +43,40 @@ fun CarModelCard(modifier: Modifier = Modifier) {
             modifier = modifier.fillMaxWidth()
         ) {
             TagCar()
+
             var nameCar by remember { mutableStateOf("") }
             RoundedIconTextField(
                 value = nameCar,
                 onValueChange = { nameCar = it },
                 label = "نام خودرو",
                 modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp),
-                corner=RoundedCornerShape(9.dp),
+                corner = RoundedCornerShape(9.dp),
                 labelColor = OrangeStatus
+            )
+
+            CustomButton(
+                text = "OK",
+                onClick = {},
+                btnColor = OrangeStatus,
+                textColor = white,
+                fontSize = 13,
+                fontWeight = FontWeight.Bold,
+                shape = RoundedCornerShape(10.dp),
+                modifier = modifier.fillMaxWidth()
             )
 
         }
     }
 }
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun TagCar(modifier: Modifier = Modifier) {
     var number by remember { mutableStateOf("") }
     val itemHeight = 80.dp // ارتفاع یکسان برای همه اجزا
-
+    val textState = remember { mutableStateOf("") }
     Row(
         modifier = modifier
             .fillMaxWidth()
@@ -76,14 +96,15 @@ fun TagCar(modifier: Modifier = Modifier) {
                 text = "ایران",
             )
 
-            OutTextFieldSample(
-                modifier = Modifier.fillMaxWidth(),
+            CustomBasicTextField(
                 value = number,
                 onValueChange = { number = it },
+                borderColor = Color.Black,
+                backgroundColor = barcolorlight2,
                 corner = RoundedCornerShape(12.dp),
+                textColor = Color.White,
                 keyboardType = KeyboardType.Number,
                 maxLength = 2,
-                textSize = 9
             )
         }
 
@@ -98,29 +119,30 @@ fun TagCar(modifier: Modifier = Modifier) {
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
-            OutTextFieldSample(
-                modifier = Modifier
-                    .weight(1.5f)
-                    .padding(horizontal = 3.dp),
+
+            CustomBasicTextField(
                 value = number,
                 onValueChange = { number = it },
+                borderColor = Color.Black,
+                modifier = Modifier
+                    .weight(1.5f),
+                backgroundColor = barcolorlight2,
                 corner = RoundedCornerShape(12.dp),
+                textColor = Color.White,
                 keyboardType = KeyboardType.Number,
-                maxLength = 3
+                maxLength = 3,
             )
-
             ExposedDropdownMenuSample(
                 modifier = Modifier
-                    .weight(2f)
-                    .padding(3.dp)
-                    .background(barcolorlight2),
+                    .weight(1.5f)
+                    .padding(3.dp),
                 listOptions = listOf("الف", "ب", "پ", "ت", "ث"),
                 onOptionSelected = { selectedOption ->
                     // Handle option selected
                 }
             )
 
-            val textState = remember { mutableStateOf("") }
+
             CustomBasicTextField(
                 value = textState.value,
                 onValueChange = { textState.value = it },
@@ -130,7 +152,8 @@ fun TagCar(modifier: Modifier = Modifier) {
                 backgroundColor = barcolorlight2,
                 corner = RoundedCornerShape(12.dp),
                 textColor = Color.White,
-                keyboardType = KeyboardType.Number
+                keyboardType = KeyboardType.Number,
+                maxLength = 2,
             )
         }
 
@@ -138,10 +161,12 @@ fun TagCar(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .weight(0.5f)
                 .height(itemHeight)
-                .background(tagcar, shape = RoundedCornerShape(
-                    topEnd = 10.dp,
-                    bottomEnd = 10.dp,
-                ))
+                .background(
+                    tagcar, shape = RoundedCornerShape(
+                        topEnd = 10.dp,
+                        bottomEnd = 10.dp,
+                    )
+                )
                 .padding(5.dp),
             colors = CardDefaults.cardColors(
                 containerColor = tagcar
@@ -168,6 +193,9 @@ fun TagCar(modifier: Modifier = Modifier) {
 }
 
 @Preview(showBackground = true)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 private fun CarModelCardPreview() {
     ComponentComposeTheme {

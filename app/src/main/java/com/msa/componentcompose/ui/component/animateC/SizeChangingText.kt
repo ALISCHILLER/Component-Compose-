@@ -9,6 +9,9 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.tooling.preview.Preview
 import com.msa.componentcompose.ui.theme.ComponentComposeTheme
 
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun AutoSizeChangingText() {
     val infiniteTransition = rememberInfiniteTransition()
@@ -29,6 +32,9 @@ fun AutoSizeChangingText() {
 }
 
 @Preview(showBackground = true)
+// Create Ali Soleymani
+//-------------------- Create Ali Soleimani--------------------//
+//-------------------- Create Ali Soleimani--------------------//
 @Composable
 fun PreviewAutoSizeChangingText() {
     ComponentComposeTheme {
