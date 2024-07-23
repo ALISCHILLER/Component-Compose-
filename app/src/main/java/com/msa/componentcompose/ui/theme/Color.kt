@@ -33,3 +33,5 @@ val background75 = Color(0xFFF8F8F8)
 val OrangeStatus = Color(0xFFFF6E53)
 val tagcar = Color(0xFF002F9C)
 val white = Color(0xFFFFFFFF)
+
+val barcolorlight3= Color(0xFFDBDBDB)
